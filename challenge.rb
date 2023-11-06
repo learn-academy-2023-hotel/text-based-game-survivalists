@@ -245,7 +245,7 @@ if option == "2"
         end
 
 else 
-        puts '... and find a small town, you are saved! You turn around and see the other survivor disappear into the blizzard, the bear not far behind.'    
+        puts '... and find a small town, you are saved! You turn around and see the other survivor disappear into the blizzard, the bear not far behind.'      
 
         puts "\nCongrats, you won the game!
 
