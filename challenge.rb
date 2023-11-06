@@ -32,10 +32,10 @@ puts'    ______
    /  /      \/  \/\   \  /      \    /   /    \
 __/__/_______/___/__\___\__________________________________________________
 
-' 
-'You crash on a distant mountain, only three of the passengers have survived, 77 people have perished!'
+You crash on a distant mountain, only three of the passengers have survived, 77 people have perished! '
 
-puts "option 1: Check for survivors \noption 2: Check for food remaining in the plane
+
+puts "1: Check for survivors \n2: Check for food remaining in the plane
 
 " 
 option = gets.chomp
@@ -60,14 +60,14 @@ puts'
 if option == "2" 
         p 'You and the other survivors have found food, but you condemend any other survivors!'
 else
-        puts "No survivors but you found a flare gun"
+        p "No survivors but you found a flare gun"
 end
 
-puts "option 1: Stop searching and go towards the forest. \noption 2: Continue searching the plane"
+puts "1: Stop searching and go towards the forest. \n2: Continue searching the plane"
 option = gets.chomp
  
  if option == "2"
-        p 'You find a flare gun but it has only one shot. You wait until night to use the flare gun, but you are freezing!
+        puts 'You find a flare gun but it has only one shot. You wait until night to use the flare gun, but you are freezing!
         +--^-------------------------------^----
         | |||||||||   `--------     |          O
         `+---------------------------^----------|
@@ -81,19 +81,53 @@ option = gets.chomp
         ------'   
  else 
         p 'You walk for what feels like miles in the dark forest. You are never heard from again.'
+        puts ' 
+                .-.
+               (o.o)
+                |=|
+               __|__
+             //.=|=.\\
+            // .=|=. \\
+            \\ .=|=. //
+             \\(_=_)//
+              (:| |:)
+               || ||
+               () ()
+               || ||
+               || ||
+               == =='
+        puts 'Do you want to play again? (yes/no)'
+        game = gets.chomp
+        break if game != 'yes'
 end
 
-puts "option 1: Use the flare gun to start a fire and survive the night \noption 2: Use the flare gun to signal for possible help and potentially freeze to death!"
+puts "1: Use the flare gun to start a fire and survive the night \n2: Use the flare gun to signal for possible help and potentially freeze to death!"
 option = gets.chomp
 
 if option == "2"
         p 'You perish to the harsh winter night of alaska and become food for the bears'
+        puts ' 
+                .-.
+               (o.o)
+                |=|
+               __|__
+             //.=|=.\\
+            // .=|=. \\
+            \\ .=|=. //
+             \\(_=_)//
+              (:| |:)
+               || ||
+               () ()
+               || ||
+               || ||
+               == =='
         puts 'Do you want to play again? (yes/no)'
         game = gets.chomp
-        break if game != 'yes' || game == 'yes' # ----> NEEDS WORK
+        break if game != 'yes'
 
 else 
-        p 'You fire your one shot into a stack of logs and warm up by the fire.
+        puts 'You fire your one shot into a stack of logs and warm up by the fire.
+
                 (
                 )\
                 {_}
@@ -107,14 +141,33 @@ else
 end
 
 
-puts " option 1: You survive the night but wake up to big animal tracks near the crash... (human remains are missing!) \noption 2: You awaken during a blizzard. Your teeth are chatting and hands are shaking. You need to find a cave."
+puts "1: You survive the night but wake up to big animal tracks near the crash... (human remains are missing!) \n2: You awaken during a blizzard. Your teeth are chatting and hands are shaking. You need to find a cave."
 option = gets.chomp
 
 if option == "1"
         p 'You search the crash again and find a large bear, you run away towards the forest'
+else
+        p 'You find a cave and run straight in... only to find a large shadowy figure breathing deeply in the dark. The last thing you hear is the roar as it sprints towards you.'
+        puts '  .-.
+               (o.o)
+                |=|
+               __|__
+             //.=|=.\\
+            // .=|=. \\
+            \\ .=|=. //
+             \\(_=_)//
+              (:| |:)
+               || ||
+               () ()
+               || ||
+               || ||
+               == =='
+        puts 'Do you want to play again? (yes/no)'
+        game = gets.chomp
+        break if game != 'yes'          
 end
 
-puts "option 1: You keep running \noption 2: You fight the bear......"
+puts "1: You keep running \n2: You fight the bear......"
 option = gets.chomp 
 
 if option == "1"
@@ -123,12 +176,12 @@ else
         puts 'This was a painful mistake as the bear tears you limb from limb'
         puts 'Do you want to play again? (yes/no)'
         game = gets.chomp
-        break if game.downcase != 'yes'    
+        break if game != 'yes'    
 
 end
 
 
-puts "option 1: You climb the mountain to look for civilization \n option 2: You stay in the forest and search for shelter"
+puts "1: You climb the mountain to look for civilization \n2: You stay in the forest and search for shelter"
 option = gets.chomp
 
 if option == "1"
@@ -136,7 +189,7 @@ if option == "1"
 end
 
 
-puts "option 1: Shelter in place at the old abandoned, dilapidated shack and gain your strength. \noption 2: Gather supplies and head back out to the blizzard, to reach ranger station found on the map in your supplies."
+puts "1: Shelter in place at the old abandoned, dilapidated shack and gain your strength. \n 2: Gather supplies and head back out to the blizzard, to reach ranger station found on the map in your supplies."
 option = gets.chomp
 
 if option == "2"
@@ -144,14 +197,14 @@ if option == "2"
 end
 
 
-puts "option 1: eat the bear cubs and take their fur for warmth \noption 2: book it out of there through the harsh blizzard and reach a frozen lake"
+puts "1: eat the bear cubs and take their fur for warmth \n2: book it out of there through the harsh blizzard and reach a frozen lake"
 option = gets.chomp 
 
 if option == "2"
         puts "You all reach the frozen lake with the bear still following in the distance, you need to cross before the bear reaches you"
 end
 
-puts "option 1: You begin crossing the lake. \noption 2: One of you stays behind to distract the bear."
+puts "1: You begin crossing the lake. \n2: One of you stays behind to distract the bear."
 option = gets.chomp 
 
 if option == "1"
@@ -160,7 +213,7 @@ else
         p 'accepting your fate, you go down swinging.'        
 end
 
-puts "option 1: You make it to the other side... \noption 2: You run back to help the other survivor"
+puts "1: You make it to the other side... \n2: You run back to help the other survivor"
 option = gets.chomp 
 
 if option == "2"
@@ -168,7 +221,7 @@ if option == "2"
 
         puts "You lost"
         game = gets.chomp
-        break if game.downcase != 'yes' 
+        break if game != 'yes' 
 
 else 
         puts " and find a small town, you are saved! You turn around and see the other survivor disappear into the blizzard, the bear not far behind. "
@@ -177,7 +230,7 @@ else
 
         puts 'Do you want to play again? (yes/no)'
         game = gets.chomp
-        break if game.downcase != 'yes'        
+        break if game != 'yes'        
 end
 end
 
