@@ -98,7 +98,11 @@ option = gets.chomp
                == =='
         puts 'Do you want to play again? (yes/no)'
         game = gets.chomp
-        break if game != 'yes'
+        if game == 'yes'
+                next
+        else
+                break
+        end
 end
 
 puts "1: Use the flare gun to start a fire and survive the night \n2: Use the flare gun to signal for possible help and potentially freeze to death!"
@@ -123,7 +127,11 @@ if option == "2"
                == =='
         puts 'Do you want to play again? (yes/no)'
         game = gets.chomp
-        break if game != 'yes'
+        if game == 'yes'
+                next
+        else
+                break
+        end
 
 else 
         puts 'You fire your one shot into a stack of logs and warm up by the fire.
@@ -164,7 +172,11 @@ else
                == =='
         puts 'Do you want to play again? (yes/no)'
         game = gets.chomp
-        break if game != 'yes'          
+        if game == 'yes' 
+                next
+        else
+                break
+        end         
 end
 
 puts "1: You keep running \n2: You fight the bear......"
@@ -176,7 +188,11 @@ else
         puts 'This was a painful mistake as the bear tears you limb from limb'
         puts 'Do you want to play again? (yes/no)'
         game = gets.chomp
-        break if game != 'yes'    
+        if game == 'yes'  
+                next
+        else
+                break
+        end  
 
 end
 
@@ -221,7 +237,11 @@ if option == "2"
 
         puts "You lost"
         game = gets.chomp
-        break if game != 'yes' 
+        if game == 'yes' 
+                next
+        else
+                break
+        end
 
 else 
         puts " and find a small town, you are saved! You turn around and see the other survivor disappear into the blizzard, the bear not far behind. "
@@ -230,7 +250,11 @@ else
 
         puts 'Do you want to play again? (yes/no)'
         game = gets.chomp
-        break if game != 'yes'        
+        if game == 'yes'   
+                next
+        else
+                break     
+        end
 end
 end
 
