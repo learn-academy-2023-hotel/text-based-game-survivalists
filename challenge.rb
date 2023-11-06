@@ -1,4 +1,5 @@
 # Text-based Game Challenge
+
 p 'Mayday! Mayday! Mayday! Boeing 747 going down near alaska, 80 passangers on board, mark 738 by 45!'
 
 puts'    ______ 
@@ -51,45 +52,57 @@ puts'
   --------------------------(-----------------------------------------
 
 '
-if option == "option 1" 
+if option == "option 2" 
         p 'You and the other survivors have found food, but you condemend any other survivors!'
 end
 
 puts'
- option 1: You search for food and give up, you then see a forest do you go towards it?
- option 2: You continue to search the plane until you find a flare gun with only one shot'
+ option 1: Stop searching and go towards the forest.
+ option 2: Continue searching the plane'
  option = gets.chomp
  
  if option == "option 2"
-        p 'You wait until night to use the flare gun, but you are freezing!'
- end
-
- puts'
-
-        (
-        )\
-        {_}
-       .-;-.
-      | -=- |
-      |     |
-      |     |
-      |     |
-      |     |
-      |.___.| '
+        p 'You find a flare gun but it has only one shot. You wait until night to use the flare gun, but you are freezing!
+        +--^----------,--------,-----,--------^-,
+        | |||||||||   `--------     |          O
+        `+---------------------------^----------|
+          `\_,---------,---------,--------------"
+            / XXXXXX /|       /
+           / XXXXXX /  `\    /
+          / XXXXXX /`-------
+         / XXXXXX /
+        / XXXXXX /
+       (________(                
+        `------'   
+ else 
+        p 'You walk for what feels like miles in the dark forest. You are never heard from again.'
+end
 
 puts' 
 option 1: Use the flare gun to start a fire and survive the night
-option 2; Use the flare gun to signal forpossible help and potentially freeze to death!'
+option 2: Use the flare gun to signal for possible help and potentially freeze to death!'
 option = gets.chomp
 
 if option == "option 2"
         p 'You perish to the harsh winter night of alaska and become food for the bears'
+else 
+        p 'You fire your one shot into a stack of logs and warm up by the fire.
+                (
+                )\
+                {_}
+               .-;-.
+              | -=- |
+              |     |
+              |     |
+              |     |
+              |     |
+              |.___.| '        
 end
 
 
 puts' 
 option 1: You survive the night but wake up to big animal tracks near the crash... (human remains are missing!)
-option 2: You Awake during a blizzard, you need to find a cave.'
+option 2: You awaken during a blizzard. Your teeth are chatting and hands are shaking. You need to find a cave.'
 option = gets.chomp
 
 if option == "option 1"
@@ -98,28 +111,30 @@ end
 
 
 puts' 
-option 1: You keep running and narrowly escape the bear, making it to the forest.
-option 2: You fight the bear...... (This was a painful mistake) the bear tears you limb from limb.'
+option 1: You keep running
+option 2: You fight the bear......'
 option = gets.chomp 
 
 if option == "option 1"
-        p 'You are in a dark forest now, but you see a large mountain in the distance'
+        p 'You narrowly escape the bear, making it to the forest. You are in a dark forest now, but you see a large mountain in the distance'
+else 
+        p 'This was a painful mistake as the bear tears you limb from limb.'        
 end
 
 
 puts'
-option 1: You climb the mountain to look for civilazation 
+option 1: You climb the mountain to look for civilization 
 option 2: You stay in the forest and search for shelter'
 option = gets.chomp
 
 if option == "option 1"
-        p 'you all reach the top and see a hunting shack on the other side of the valley, you hike to the shack but your are extremly fatigued upon arrival'
+        p 'you all reach the top and see a hunting shack on the other side of the valley. You hike to the shack but your are extremly fatigued upon arrival'
 end
 
 
 puts'
-option 1: Shelter in place at the old abandoned delapitated shack and gain your strength 
-option 2: Gather supplies and head back out to the blizzard, to reach ranger station found on the map in the supplies.'
+option 1: Shelter in place at the old abandoned, dilapidated shack and gain your strength. 
+option 2: Gather supplies and head back out to the blizzard, to reach ranger station found on the map in your supplies.'
 option = gets.chomp
 
 if option == "option 2"
@@ -133,27 +148,30 @@ option 2: book it out of there through the harsh blizzard and reach a frozen lak
 option = gets.chomp 
 
 if option == "option 2"
-        p 'You all reach the frozen lake with the bear still in following in the distance, you need to cross before the bear reaches you'
+        p 'You all reach the frozen lake with the bear still following in the distance, you need to cross before the bear reaches you'
 end
 
 
 puts' 
-option 1: You cross the lake and one of you falls through the ice and gets pulled under by the current.
-option 2: One of you stays behind the distract the bear so the others can escape (accepting their fate).'
+option 1: You begin crossing the lake.
+option 2: One of you stays behind to distract the bear.'
 option = gets.chomp 
 
 if option == "option 1"
-        p 'Another member of your party gets lost in the blizzard to be consumed by the hungry bear'
+        p 'and one of you falls through the ice and gets pulled under by the current.'
+else 
+        p 'accepting your fate, you go down swinging.'        
 end
 
-
 puts' 
-option 1: You cross the lake and find a small town, you are saved!
+option 1: You make it to the other side...
 option 2: You run back to help the other survivor'
 option = gets.chomp 
 
 if option == "option 2"
-        p 'You find the other survivor being mauled by the bear! all of your combined weightis too much for the ice and you are all pulled under, never to be seen from again'
+        p 'You find the other survivor being mauled by the bear! all of your combined weight is too much for the ice and you are all pulled under, never to be seen or heard from again'
+else 
+        p ' and find a small town, you are saved! You turn around and see the other survivor disappear into the blizzard, the bear not far behind.'        
 end
 
 
